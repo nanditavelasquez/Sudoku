@@ -7,5 +7,5 @@
 <div>
 <br>
 <div align="center">
-   <img src="img/sudoku.jpg" width="540" height="613">
+   <img src="IMG/sudoku.jpg" width="540" height="613">
 </div>
