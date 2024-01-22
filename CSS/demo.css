@@ -1,0 +1,303 @@
+﻿html,body
+{
+    height: 100%;
+    border: 0px;
+    overflow: auto;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    font-family: Arial;
+    color: #FFAEAE;
+    font-size: 12px;
+}
+
+body,table,tr,td,div
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+b
+{
+    color: #000;
+    font-weight: bold;
+}
+
+#Main,#Content,#Footer
+{
+    width: 660px;
+    margin: 0 auto;
+}
+
+#PageTitle
+{
+    font-family: Segoe UI, Arial;
+    font-weight: normal;
+    color: #000;
+    font-size: 65px;
+    text-align: center;
+}
+
+a
+{
+    color: #FFAEAE;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#Content
+{
+    float: left;
+}
+
+#Column1
+{
+    width: 300px;
+    float: left;
+}
+
+#sudokuBoard
+{
+    width: 426px;
+    margin-left: 105px;
+    float: left;
+    box-shadow: 0px 0px 30px gray;
+    -moz-box-shadow: 0px 0px 30px gray;
+    -webkit-box-shadow: 1px 1px 30px 16px gray;
+}
+
+#Column2
+{
+    width: 174px;
+    margin-left: 40px;
+    float: left;
+}
+
+#Footer
+{
+    margin-top: 600px;
+    color: #910502;
+}
+
+#FooterDetails
+{
+    float: left;
+    font-size: 11px;
+}
+
+#Copyright
+{
+    float: right;
+    font-size: 10px;
+}
+
+td.boardCellGroupA,td.boardCellGroupB
+{
+    background-color: #000;
+}
+
+td.boardCellGroupA td.boardCell
+{
+    width: 44px;
+    height: 44px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+td.boardCellGroupB td.boardCell
+{
+    width: 44px;
+    height: 44px;
+    border: 1px solid #000;
+    background-color: darkgray;
+}
+
+.staticValue
+{
+    font-family: Segoe UI, Arial;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #000;
+}
+
+.staticValue,.editValue
+{
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #000;
+}
+
+.editValue:hover
+{
+    background: #fff;
+}
+
+label
+{
+    position: relative;
+    top: 3px;
+    line-height: 24px;
+    font-size: 15px;
+    color: #000;
+}
+
+select
+{
+    font-family: Segoe UI, Arial;
+    color: #999999;
+    font-weight: normal;
+    font-size: 12px;
+    border-top: solid 1px #CCCCCC;
+    border-left: solid 1px #E2E3EA;
+    border-bottom: solid 1px #000;
+    border-right: solid 1px #E2E3EA;
+    margin: 3px 0px;
+    min-width: 100px;
+    background: #FDFDFD;
+}
+
+#timeFinished
+{
+    font-family: Segoe UI, Arial;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.finishedLabel,#timeFinished
+{
+    color: #FBF2A8;
+}
+
+.editValue input
+{
+    font-family: Segoe UI, Arial;
+    font-size: 30px;
+    color: #000;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    border: 0px;
+    background: none !important;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    left: -1px;
+}
+
+input[type="submit"]
+{
+    font-family: Segoe UI, Arial;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0px;
+    min-width: 162px;
+    min-height: 34px;
+    background: #000;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+input[type="submit"].gameControls
+{
+    font-family: Segoe UI, Arial;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0px;
+    min-width: 28px;
+    min-height: 28px;
+    background: #000;
+    margin: 8px 0px;
+    padding: 2px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.gameControlSet
+{
+    height: 142px;
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+
+#buttonSolve
+{
+    margin-top: 119px;
+    color: #FFAEAE;
+}
+
+#youWon
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('IMG/shade.png') repeat;
+}
+
+#youWon div
+{
+    width: 400px;
+    background: #000;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin: 100px auto 0px auto;
+}
+
+small
+{
+    font-size: 14px;
+    color: #FFFD7B;
+}
+
+.noErrors
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.errorsFound
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ED823F;
+}
+
+.error
+{
+    border: 1px solid #ED823F;
+}
+
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #2D2D2D;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius: 10px;
+	border-right: 2px solid #2D2D2D;
+}
+
